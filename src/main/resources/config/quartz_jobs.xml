@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<quartz>
+    <job>
+        　　 <job-detail>
+        　　<name>test</name>
+        　　<group>DEFAULT</group>
+        　　<description>testJobhere</description>
+        　　<job-class>com.allen.MyJob</job-class>
+        　　</job-detail>
+        　　 <trigger>
+        <cron>
+            <name>testTrigger</name>
+            <group>DEFAULT</group>
+            <job-name>test</job-name>
+            <job-group>DEFALUT</job-group>
+            <cron-expression>0/5 * * * * ?</cron-expression>
+        </cron>
+    </trigger>
+        　 </job>
+</quartz>
